@@ -4,7 +4,7 @@ This contact management application was developed with TailwindCSS, JavaScript, 
 
 ## Deployed Link
 
-You can access the app live at [Contact Management App]().
+You can access the app live at [crud-contact-manager](https://crud-contact-manager.vercel.app/).
 
 ## Pages and Functionality
 

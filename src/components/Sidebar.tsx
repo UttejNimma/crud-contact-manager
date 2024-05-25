@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Desktop View */}
-      <div className="box-content hidden min-h-screen min-w-[210px] flex-col bg-white py-10 pl-2 md:flex md:w-1/5 lg:pl-4">
+      <div className="box-content hidden min-h-screen min-w-[100px] flex-col bg-white py-10 pl-2 md:flex md:w-1/5 lg:pl-4">
         <ul className="flex flex-col gap-5 py-10 font-bold text-gray-600 ">
           <Link to="/">
             <li

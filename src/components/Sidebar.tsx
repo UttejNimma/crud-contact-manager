@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const { pathname } = useLocation();
-  const [setshowSidebar, setsetshowSidebar] = useState(false);
+  const [setshowSidebar, setSetshowSidebar] = useState(false);
 
   const activeClass = "font-bold text-black capitalize border-r-2 border-black";
 
@@ -73,7 +73,7 @@ const Sidebar = () => {
       {/* MOBILE VIEW */}
       <div className="absolute top-0 z-10 w-full bg-gray-100 px-8 py-4 shadow-lg md:hidden">
         {/* Hamburger icon */}
-        <div onClick={() => setsetshowSidebar((prev) => !prev)}>
+        <div onClick={() => setSetshowSidebar((prev) => !prev)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -97,7 +97,7 @@ const Sidebar = () => {
           <div className="min-h-screen flex-col bg-white py-10 pl-2 md:flex md:w-1/5 lg:pl-4 ">
             <div
               className="absolute right-4 top-5 w-auto rounded-full border p-2 shadow-xl hover:cursor-pointer"
-              onClick={() => setsetshowSidebar((prev) => !prev)}
+              onClick={() => setSetshowSidebar((prev) => !prev)}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ const Sidebar = () => {
               </svg>
             </div>
             <ul className="flex flex-col gap-5 py-10 font-bold text-gray-400">
-              <Link to="/" onClick={() => setsetshowSidebar(false)}>
+              <Link to="/" onClick={() => setSetshowSidebar(false)}>
                 <li
                   className={`flex gap-2 ${
                     pathname === "/" ? activeClass : ""
@@ -133,7 +133,7 @@ const Sidebar = () => {
                   Home
                 </li>
               </Link>
-              <Link to="/add-contact" onClick={() => setsetshowSidebar(false)}>
+              <Link to="/add-contact" onClick={() => setSetshowSidebar(false)}>
                 <li
                   className={`flex gap-2 ${
                     pathname === "/add-contact" ? activeClass : ""
@@ -158,7 +158,7 @@ const Sidebar = () => {
               </Link>
               <Link
                 to="/charts-and-maps"
-                onClick={() => setsetshowSidebar(false)}
+                onClick={() => setSetshowSidebar(false)}
               >
                 <li
                   className={`flex gap-2 ${
